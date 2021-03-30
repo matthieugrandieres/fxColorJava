@@ -33,7 +33,7 @@ public class Color {
         this.green = green;
         this.blue = blue;
 
-        if (this.red < 0 || this.red > 255 || this.green < 0 || this.green > 255 || this.blue < 0 || this.blue > 255) {
+        if (this.red < MIN_VALUE || this.red > MAX_VALUE || this.green < MIN_VALUE || this.green > MAX_VALUE || this.blue < MIN_VALUE || this.blue > MAX_VALUE) {
             throw new IllegalArgumentException("Error number");
         }
     }
