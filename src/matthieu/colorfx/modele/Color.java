@@ -6,6 +6,13 @@ import java.util.ArrayList;
 public class Color {
 
     /**
+     * Values hexadecimal
+     */
+    char[] values = {
+            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'
+    };
+
+    /**
      * Valeur rouge entre 0 et 255
      */
     private int red;
@@ -24,6 +31,11 @@ public class Color {
      * Valeur hexadécimal
      */
     private String hexValue;
+
+    /**
+     * Array hex
+     */
+    private char[] hexArray;
 
     private static final int MIN_VALUE = 0;
     private static final int MAX_VALUE = 255;
@@ -106,6 +118,19 @@ public class Color {
 
     public String getFxBackgroundColor(){
         return "-fx-background-color: rgb(" + red + "," + green + "," + blue + ")";
+
+    }
+
+    public String convertRbgHex(int red, int green, int blue){
+        hexArray[0] = values[red / 16];
+        hexArray[1] = values[red % 16];
+        hexArray[2] = values[green / 16];
+        hexArray[3] = values[green % 16];
+        hexArray[4] = values[blue / 16];
+        hexArray[5] = values[blue % 16];
+
+        return "#" + hexArray[0] + "" + hexArray[1] + "" + hexArray[2] + "" + hexArray[3] + "" + hexArray[4] + "" + hexArray[5] + "" + hexArray[6];
+
 
     }
 

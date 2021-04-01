@@ -20,6 +20,8 @@
             <TextField fx:id="textFieldBlue" layoutX="174.0" layoutY="155.0" prefHeight="25.0" prefWidth="56.0" text="0" />
             <TextField fx:id="textFieldGreen" layoutX="174.0" layoutY="99.0" prefHeight="25.0" prefWidth="56.0" promptText="0" text="0" />
             <Pane fx:id="background" layoutX="276.0" layoutY="69.0" prefHeight="111.0" prefWidth="194.0" styleClass="bg-color" />
+            <Label layoutX="330.0" layoutY="6.0" text="Hexadecimal" />
+            <TextField fx:id="textFieldHex" layoutX="293.0" layoutY="29.0" />
          </children>
       </Pane>
    </children>

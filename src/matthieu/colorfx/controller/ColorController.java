@@ -35,6 +35,9 @@ public class ColorController implements Initializable {
     private Slider rangeFieldBlue;
 
     @FXML
+    private TextField textFieldHex;
+
+    @FXML
     private Pane background;
 
 
@@ -62,6 +65,8 @@ public class ColorController implements Initializable {
 
             color = new Color(red, green, blue);
             background.setStyle(color.getFxBackgroundColor());
+
+            textFieldHex.setText(color.convertRbgHex(color.getRed(), color.getGreen(), color.getBlue()));
 
             System.out.println(color.getRed() + " " + color.getGreen() + " " + color.getBlue() + " " );
         });
