@@ -104,17 +104,6 @@ public class ChessController implements Initializable {
                 a8, b8, c8, d8, e8, f8, g8, h8
         };
 
-        /*ImageView[] arrayImageBlanc = {
-                imageA1, imageB1, imageC1, imageD1, imageE1, imageF1, imageG1, imageH1,
-                imageA2, imageB2, imageC2, imageD2, imageE2, imageF2, imageG2, imageH2,
-
-        };
-
-        ImageView[] arrayImageNoir = {
-                imageA8, imageB8, imageC8, imageD8, imageE8, imageF8, imageG8, imageH8,
-                imageA7, imageB7, imageC7, imageD7, imageE7, imageF7, imageG7, imageH7
-        };*/
-
         ImageView[] arrayAllImage =
         {
                 imageA1, imageB1, imageC1, imageD1, imageE1, imageF1, imageG1, imageH1,
@@ -211,8 +200,6 @@ public class ChessController implements Initializable {
             for (int i = 0; i < 16; i++) {
                 arrayAllImage[i].setImage((new Image(pieceBlanchesArray[i].getImage())));
                 arrayAllImage[i].setId(pieceBlanchesArray[i].getImage());
-
-
             }
 
             int j = 0;
@@ -226,18 +213,11 @@ public class ChessController implements Initializable {
                 arrayAllImage[i].setImage(null);
                 arrayAllImage[i].setId(null);
             }
-
         });
 
         /**
          * Evènement des pièces
          */
-
-        /**
-         * Si i entre 0 et 16
-         * Si i entre 47 et 63
-         */
-
 
         /**
          ** click
